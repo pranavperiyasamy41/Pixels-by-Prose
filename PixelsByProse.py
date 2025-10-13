@@ -9,6 +9,6 @@ def cartoonify(prompt):
     image = pipe(prompt).images[0]
     return image
 
-demo = gr.Interface(fn=cartoonify, inputs="text", outputs="image", title="Text to Cartoon Image Generator")
+demo = gr.Interface(fn=cartoonify, inputs="text", outputs="image", title="Pixels By Prose")
 
 demo.launch()
