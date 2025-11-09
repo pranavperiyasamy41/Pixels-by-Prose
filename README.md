@@ -29,7 +29,7 @@ Before running this project, ensure you have:
 - CUDA-compatible GPU (NVIDIA recommended)
 - CUDA Toolkit installed
 - At least 6GB of GPU memory (VRAM)
-- Stable internet connection (for first-time model download)
+- Stable internet connection for first-time model download.
 
 
 <img width="1807" height="811" alt="Screenshot 2025-07-29 184241" src="https://github.com/user-attachments/assets/f87ca66c-ea51-4b8a-9bb5-39cda435f6ec" />
