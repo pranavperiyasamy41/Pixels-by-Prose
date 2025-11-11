@@ -6,7 +6,7 @@ Pixels by Prose is a text-to-image generation application that converts text pro
 
 ## Features
 
-- **Text-to-Image Generation**: Convert any text description into a cartoon-style image
+- **Text-to-Image Generation**: Convert any text description into a cartoon-style images
 - **Arcane Diffusion Model**: Utilizes the specialized Arcane-Diffusion model for unique artistic outputs
 - **Simple Web Interface**: Clean and intuitive interface powered by Gradio
 - **GPU Accelerated**: Optimized for CUDA-enabled devices for fast generation
@@ -26,8 +26,8 @@ Pixels by Prose is a text-to-image generation application that converts text pro
 Before running this project, ensure you have:
 
 - Python 3.8 or higher
-- CUDA-compatible GPU (NVIDIA recommended)
-- CUDA Toolkit installed
+- CUDA-compatible GPU (NVIDIA Recommended)
+- CUDA Toolkit installed.
 - At least 6GB of GPU memory (VRAM)
 - Stable internet connection for first-time model download.
 
