@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixels By Prose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="glass-card">
+            <h1>Pixels <span>By Prose</span></h1>
+            <p>Transform your imagination into AI-generated art</p>
+            
+            <textarea id="userPrompt" placeholder="Describe your imagination..."></textarea>
+            
+            <button id="genBtn" onclick="runGenerator()">Generate Image</button>
+
+            <div id="outputArea" class="hidden">
+                <img id="resultImg" src="" alt="Generated Art">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
