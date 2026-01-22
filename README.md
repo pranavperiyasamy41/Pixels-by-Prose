@@ -1,35 +1,49 @@
-# Pixels by Prose
+# Pixels By Prose: AI Art Generator
 
-**Transform your words into stunning cartoon-style images using AI**
+Pixels By Prose is a full-stack generative AI application that transforms natural language prompts into high-quality digital art using Latent Diffusion Models. The project features a custom-built web interface and a high-performance FastAPI backend optimized for stable diffusion inference.
 
-Pixels by Prose is a text-to-image generation application that converts text prompts into artistic cartoon-style images using the Arcane Diffusion model. Built with Gradio and Stable Diffusion, this project demonstrates the power of AI in creative visual generation.
+---
 
-## Features
+## Project Preview
 
-- **Text-to-Image Generation**: Convert any text description into a cartoon-style images
-- **Arcane Diffusion Model**: Utilizes the specialized Arcane-Diffusion model for unique artistic outputs
-- **Simple Web Interface**: Clean and intuitive interface powered by Gradio
-- **GPU Accelerated**: Optimized for CUDA-enabled devices for fast generation
-- **One-Click Generation**: Just enter your prompt and generate instantly
+<p align="center">
+  <img src="PixelsByProse-1.png" width="800" alt="Pixels By Prose Interface">
+  <br>
+  <em>Custom Dark-Mode UI designed for an immersive creative experience.</em>
+</p>
 
-## Technologies Used
+<p align="center">
+  <img src="PixelsByProse-2.png" width="800" alt="AI Generated Output">
+  <br>
+  <em>An example of an Arcane-style portrait generated from a text prompt.</em>
+</p>
 
-- **Python 3.8+**: Core programming language
-- **Gradio**: Web interface framework for ML applications
-- **Diffusers**: Hugging Face library for diffusion models
-- **PyTorch**: Deep learning framework with CUDA support
-- **Stable Diffusion**: Base architecture for image generation
-- **Arcane Diffusion Model**: Pre-trained model from nitrosocke for cartoon-style images
+---
 
-## Prerequisites
+## Core Features
+* **Latent Diffusion Integration**: Leverages the `nitrosocke/Arcane-Diffusion` model for stylized artistic generations.
+* **Optimized Inference**: Utilizes PyTorch 2.6 with attention slicing to manage VRAM efficiency on consumer hardware.
+* **Real-time API**: Powered by a FastAPI server that handles asynchronous image processing and byte streaming.
+* **Responsive Frontend**: A clean, "glassmorphism" styled UI built with modern CSS and Vanilla JavaScript.
 
-Before running this project, ensure you have:
+---
 
-- Python 3.8 or higher
-- CUDA-compatible GPU (NVIDIA Recommended)
-- CUDA Toolkit installed.
-- At least 6GB of GPU memory (VRAM)
-- Stable internet connection for first-time model download.
+## Technical Architecture
 
 
-<img width="1807" height="811" alt="Screenshot 2025-07-29 184241" src="https://github.com/user-attachments/assets/f87ca66c-ea51-4b8a-9bb5-39cda435f6ec" />
+
+* **Frontend**: HTML5, CSS3 (Custom Variables), JavaScript (Fetch API).
+* **Backend**: FastAPI (Python 3.12).
+* **AI Model**: Stable Diffusion (Arcane-Diffusion fine-tune).
+* **Machine Learning**: PyTorch 2.6, Hugging Face Diffusers.
+* **Hardware Support**: Automatic CUDA/CPU detection for cross-platform compatibility.
+
+---
+
+## Installation and Setup
+
+### 1. Backend Configuration
+Ensure you have an NVIDIA GPU for optimal performance, or the system will default to CPU mode. Navigate to the backend directory and install:
+```bash
+pip install fastapi uvicorn diffusers torch transformers accelerate
+python main.py
